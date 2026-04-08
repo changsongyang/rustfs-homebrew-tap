@@ -13,19 +13,19 @@
 # limitations under the License.
 
 class Rustfs < Formula
-  VERSION = "1.0.0-alpha.83".freeze
+  VERSION = "1.0.0-alpha.91".freeze
   GITHUB_REPO = "rustfs/rustfs".freeze
   BINARIES = {
-    "macos-aarch64" => "6f8bc37b51cc84ce515fbeec8ca79b547514996a649923e2004a54f2d0c4b83a",
-    "macos-x86_64" => "da3c2da8921b270e126e1283d02fba8bf5d7e409ebf8a6b341a0fa5f802637c9",
-    "linux-aarch64-musl" => "035510d85d2d818454c5b3473c361612eb9a719b809dc3f098bbea1aabb43274",
-    "linux-x86_64-musl" => "6b0c57e8c77f1b15c5d039cebe215dddc718df5a06f68cf37e643a92049ee9c1",
+    "macos-aarch64" => "0e0d4d508b3eee585b1c13d4b0e8b33fe0b254d416c4b9ad40725fd9035682ec",
+    "macos-x86_64" => "d9426b7222ddf0c6dfcc42bee7ec2546e8d8d1936fedbc0dd0c7ff92acb89d6a",
+    "linux-aarch64-musl" => "71de5d080c600688f090ce1ac4544f12fa6514cb0cb6780e4d0f8d778dd70cec",
+    "linux-x86_64-musl" => "3629d332b0336e2d8920b92dc6770e917a7b7a502102f4004df8c7289988e2f2",
   }.freeze
 
   desc "High-performance distributed object storage written in Rust"
   homepage "https://rustfs.com"
   url "https://github.com/#{GITHUB_REPO}/archive/refs/tags/#{VERSION}.tar.gz"
-  sha256 "07d8424b1e4bffe44049880ad31a28a33bbd49fe0cbeb5c2dc604c8f2a19b10d"
+  sha256 "6546f647a526662ddfd29b9729c5f13a5f4cffe59e616a3c1306aebfa34ef55b"
   license "Apache-2.0"
 
   def install
