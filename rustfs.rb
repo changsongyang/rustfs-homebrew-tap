@@ -13,19 +13,19 @@
 # limitations under the License.
 
 class Rustfs < Formula
-  VERSION = "1.0.0-alpha.83".freeze
+  VERSION = "1.0.0-beta.4".freeze
   GITHUB_REPO = "rustfs/rustfs".freeze
   BINARIES = {
-    "macos-aarch64" => "6f8bc37b51cc84ce515fbeec8ca79b547514996a649923e2004a54f2d0c4b83a",
-    "macos-x86_64" => "da3c2da8921b270e126e1283d02fba8bf5d7e409ebf8a6b341a0fa5f802637c9",
-    "linux-aarch64-musl" => "035510d85d2d818454c5b3473c361612eb9a719b809dc3f098bbea1aabb43274",
-    "linux-x86_64-musl" => "6b0c57e8c77f1b15c5d039cebe215dddc718df5a06f68cf37e643a92049ee9c1",
+    "macos-aarch64" => "36d7577f7b66d7b4449da7612b3492cbf59d0eea9cbf13984fa88aef6433dbc4",
+    "macos-x86_64" => "89935d4dc4f65d555054aeed5ac2f2a9410210129568bb5760215e70ba84894e",
+    "linux-aarch64-musl" => "391a5cb219e8f79224ba058f0a9547212a480cfac659dd9617405447912e686b",
+    "linux-x86_64-musl" => "02ab7772da31bf85964cc997bd514dbbda191ee199193e72394f1f45fe14d298",
   }.freeze
 
   desc "High-performance distributed object storage written in Rust"
   homepage "https://rustfs.com"
   url "https://github.com/#{GITHUB_REPO}/archive/refs/tags/#{VERSION}.tar.gz"
-  sha256 "07d8424b1e4bffe44049880ad31a28a33bbd49fe0cbeb5c2dc604c8f2a19b10d"
+  sha256 "c2db71ec1e87055ea2b41297865b660cf59a63c6a480ec2de03835e3ff82b1e1"
   license "Apache-2.0"
 
   def install
